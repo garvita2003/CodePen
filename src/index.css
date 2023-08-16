@@ -1,0 +1,60 @@
+body{
+  margin: 0;
+}
+
+.top-pane{
+  background-color: hsl(255,6%,25%);
+}
+
+.pane{
+  height: 50vh;
+  display: flex;
+}
+
+.editor-container{
+  flex-grow: 1; /*to fill the entire space*/
+  flex-basis: 0; /*to make sure that all are of same size*/
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background-color: hsl(255,6%,25%);
+}
+
+.editor-container.collapsed {
+  flex-grow: 0; /*in order to minimize and avoid to grow further*/
+}
+
+.editor-container.collapsed .CodeMirror-scroll {
+  position: absolute; /*cause the terminal to be small as possible*/
+  overflow: hidden !important; /*in order to hide the scroll bar when we collapse and important make sure that it is overwriten */
+}
+
+.expand-collapse-btn{
+  margin-left: 0.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.editor-title{
+  display: flex;
+  justify-content: space-between; /*push the one title to formost left and another to the formost right*/
+  background-color: hsl(255,6%,13%);
+  color: white;
+  padding: 0.5rem  0.5rem 0.5rem 1rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+/*Overwrite the code in order to change the default styles*/
+.CodeMirror{
+  height: 100% !important; /*make sure that it overwrite the deafult height of the editor*/
+}
+
+.code-mirror-wrapper{
+  flex-grow: 1;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  overflow: hidden;
+}
