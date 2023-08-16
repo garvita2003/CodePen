@@ -1,13 +1,13 @@
 # CodePen
-Step the Node.js module
-Then run the packages for codemirror and icon styles:
-1) npm i --save @fortawesome/fontawesome-svg-core
-2) npm i --save @fortawesome/free-solid-svg-icons
-3) npm i --save @fortawesome/free-regular-svg-icons
-This website will type as the user type along with all the other features in css and javascript
-if we refresh the page then also the page will not reload the content even if you reopen or re-run means it will show the last updated code and will be clear in case of manually erasing in code editor
-We can even resize the editors
-We have even added the icon in the tab section for the website
+1) Setup the Node.js module
+2) Then run the packages for codemirror and icon styles:
+   npm i --save @fortawesome/fontawesome-svg-core
+   npm i --save @fortawesome/free-solid-svg-icons
+   npm i --save @fortawesome/free-regular-svg-icons
+3) This website will type as the user type along with all the other features in css and javascript
+4) If we refresh the page then also the page will not reload the content even if you reopen or re-run means it will show the last updated code and will be clear in case of manually erasing the content in code editor
+5) We can even resize the editor
+6) We have even added the icon in the tab section for the website
 
 # Technology/Language Used
 1) HTML
